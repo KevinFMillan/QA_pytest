@@ -21,8 +21,3 @@ def test_positive_asserts(): # Se prueban los parametros que se sepone que dan p
     positive_assert('kevinatest1')
     positive_assert('kevinatest2')
     positive_assert('kevinatest3')
-# def test_create_user_confirmation():
-#     user_body = get_user_body('kevinatest')
-#     respuesta = sender.post_new_user(user_body)
-#     assert respuesta.status_code == 201
-#     assert respuesta.json()['authToken'] != ''
