@@ -54,9 +54,9 @@ def test_positive_asserts(): # Se prueban los parametros que se sepone que dan p
 def test_negative_asserts():
     negative_asserts('A') # Aprobado
     negative_asserts('Aaaaaaaaaaaaaaaa') # Aprobado
-    # negative_asserts('A Aaa') # No aprobado
+    negative_asserts('A Aaa') # No aprobado
     negative_asserts('/"№%@=') # status code 201
     negative_asserts('1234') # status code 201
-    #negative_assert_sin_parametro() # Para este y el de abajo de debe crear otra def con el message 
-    # negative_asserts("") # de error correspondiente ya que es distinto al resto de pruebas negatidvas
+    negative_assert_sin_parametro() # Para este y el de abajo de debe crear otra def con el message 
+    negative_asserts("") # de error correspondiente ya que es distinto al resto de pruebas negatidvas
     negative_asserts(134) # status code 201
